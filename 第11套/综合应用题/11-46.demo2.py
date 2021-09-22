@@ -7,8 +7,8 @@ for line in lines:
     student = line.strip('\n').split(' ')
     for i in student[-10:]:
         if int(i) < 60:
-            break
-    else:
+            break                # 当不满足条件则退出当前循环
+    else:                        # 只要循环正常运行了，则将student添加到L中
         L.append(student)
 print(L)
 for l in L:
