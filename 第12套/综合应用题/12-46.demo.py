@@ -6,7 +6,7 @@ f = open('out.txt','w')
 for line in lines:
     line = line.strip()
     worldList = jieba.lcut(line)
-    f.writelines('\n'.join(worldList))
+    f.write('\n'.join(worldList))
 f.close()
 f = open('out.txt','r')
 worlds = f.readlines()
