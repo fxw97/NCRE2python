@@ -8,7 +8,7 @@ for line in lines:
     for i in student[-10:]:
         if int(i) < 60:
             break                # 当不满足条件则退出当前循环
-    else:                        # 只要循环正常运行了，则将student添加到L中
+    else:                        # 只要循环正常运行了，则将student添加到L中 这里是for...else结构，当for中循环没有break时，才执行else语句
         L.append(student)
 print(L)
 for l in L:
