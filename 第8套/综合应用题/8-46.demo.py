@@ -7,5 +7,3 @@ for i in intxt:
         print(chr(ord('A') + (ord(i) - ord('A') + 3) % 26), end='')
     else:
         print(i, end='')
-
-
